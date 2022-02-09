@@ -13,10 +13,10 @@ import {
    useNavigate,
    useLocation
 } from 'react-router-dom'
-import AboutUs from './components/AboutUs'
-import Services from './components/Services'
-import Projects from './components/Projects'
-import ContactUs from './components/ContactUs'
+import AboutUs from './pages/AboutUs'
+import Services from './pages/Services'
+import Projects from './pages/Projects'
+import ContactUs from './pages/ContactUs'
 
 function App() {
    return (
