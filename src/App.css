@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
+
 :root {
    --primary-color: #ff631b;
    ---secondary-color: black;
+}
+
+* {
+   font-family: 'Jost', sans-serif;
 }
 
 /* Navbar */
@@ -12,13 +18,13 @@
 }
 
 .logo {
-   background: var(--primary-color);
+   background: black;
    height: 25px;
    padding: 0px 30px;
 }
 
 .logo-container {
-   background: #ff631b;
+   background: black;
    height: 77px;
    align-items: center;
 }
@@ -37,6 +43,23 @@
    color: #ff631b !important;
 }
 
+/* Home page */
+.main-section {
+   height: 100vh;
+   background: url(./img/arkose_buildcom_hero_image.jpg) center center/cover;
+}
+
+.main-container {
+   width: 50vw;
+   padding-top: 100px;
+   padding-left: 30px;
+}
+
+.main-container h1,
+p {
+   color: #fff;
+}
+
 /* About us */
 .about-us {
    height: 60vh;
@@ -49,6 +72,23 @@
    top: 150px;
    left: 50px;
 }
+
+.main-container {
+   animation: transitionIn 1s;
+}
+
+@keyframes transitionIn {
+   from {
+      opacity: 0;
+      transform: translateX(40px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
 .about-us h1 {
    font-size: 50px;
    font-weight: 700;
@@ -266,7 +306,7 @@ textarea:hover {
       margin-right: 20px;
    }
    .navbar-toggler {
-      background: #ff631b !important;
+      background: #707070 !important;
    }
    .experience-section {
       flex-direction: column;
