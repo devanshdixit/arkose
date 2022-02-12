@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import { Link } from 'react-router-dom'
+import Footer from './Footer'
 
 const AboutUs = () => {
    return (
@@ -129,9 +130,7 @@ const AboutUs = () => {
                </div>
             </div>
          </div>
-         <div>
-            <h2>footer</h2>
-         </div>
+         <Footer />
       </>
    )
 }

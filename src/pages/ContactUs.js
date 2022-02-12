@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 import Header from './Header'
 
 const ContactUs = () => {
@@ -36,6 +37,7 @@ const ContactUs = () => {
                ></iframe>
             </div>
          </div>
+         <Footer />
       </>
    )
 }
