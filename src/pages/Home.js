@@ -1,8 +1,6 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/react'
 import { FaBusinessTime, FaMedal } from 'react-icons/fa'
 import { GiFactory } from 'react-icons/gi'
 import { VscFeedback } from 'react-icons/vsc'
@@ -28,79 +26,109 @@ const Home = () => {
                </p>
             </div>
          </div>
-         <div className="our-work">
-            <h5>Our Work</h5>
-            <h1>Explore Our Work</h1>
-            <Swiper
-               modules={[Navigation, Autoplay]}
-               spaceBetween={0}
-               slidesPerView={3}
-               navigation
-               autoplay={{ delay: 2000 }}
-               onSlideChange={() => console.log('slide change')}
-               onSwiper={(swiper) => console.log(swiper)}
-            >
-               <SwiperSlide className="slider">
-                  <div className="our-work-card">
-                     <img
-                        className="card-img"
-                        src={require('../img/img1.jpg')}
-                     />
-                     <h4>CONSTRUCTION SITE</h4>
-                     <h6>Construction And Civil Work</h6>
+         <div className="section-offer">
+            <div className="sub-section-offer">
+               <h6>| What We Offer</h6>
+               <h1>Arkose Best Services</h1>
+            </div>
+            <div>
+               <div className="row">
+                  <div className="col-lg-4 col-md-6 col-sm-12 service-card">
+                     <img className="" src={require('../img/service1.jpg')} />
+                     <h2>Architecture</h2>
+                     <h6>
+                        A perfect Architecture Design customizes your
+                        residential or commercial building exactly as you want.
+                        It is planning, designing, and devising buildings that
+                        are more functional, aesthetical and durable. We work
+                        with space and elements to create a...
+                     </h6>
+                     <a href="#">Read More</a>
                   </div>
-               </SwiperSlide>
-               <SwiperSlide>
-                  <div className="our-work-card">
-                     <img
-                        className="card-img"
-                        src={require('../img/img2.jpg')}
-                     />
-                     <h4>FARM HOUSE</h4>
-                     <h6>Architecture</h6>
+
+                  <div className="col-lg-4 col-md-6 col-sm-12 service-card">
+                     <img className="" src={require('../img/service2.jpg')} />
+                     <h2>Interior Designing</h2>
+                     <h6>
+                        Interior Designers of Arkose Buildcom can transform
+                        ordinary office spaces, houses, hotels, etc. into
+                        masterpieces. Interior designing is visual art because
+                        it's all about dealing with colors and styles. To make
+                        indoor spaces more...
+                     </h6>
+                     <a href="#">Read More</a>
                   </div>
-               </SwiperSlide>
-               <SwiperSlide>
-                  <div className="our-work-card">
-                     <img
-                        className="card-img"
-                        src={require('../img/img3.jpg')}
-                     />
-                     <h4>MODERN HOUSE</h4>
-                     <h6>Renovation</h6>
+                  <div className="col-lg-4 col-md-6 col-sm-12 service-card">
+                     <img className="" src={require('../img/service3.jpg')} />
+                     <h2>Construction And Civil Work</h2>
+                     <h6>
+                        Construction And civil work are the processes to build
+                        or refurbish your site. These processes are required a
+                        lot of hard work and dedication. Arkose Buildcom as a
+                        team ensure that you will not face burden on your head
+                        during your...
+                     </h6>
+                     <a href="#">Read More</a>
                   </div>
-               </SwiperSlide>
-               <SwiperSlide>
-                  <div className="our-work-card">
-                     <img
-                        className="card-img"
-                        src={require('../img/img4.jpg')}
-                     />
-                     <h4>OFFICE</h4>
-                     <h6>Interior Design</h6>
+                  <div className="col-lg-4 col-md-6 col-sm-12 service-card">
+                     <img className="" src={require('../img/service4.jpg')} />
+                     <h2>Interior Designing</h2>
+                     <h6>
+                        Interior Designers of Arkose Buildcom can transform
+                        ordinary office spaces, houses, hotels, etc. into
+                        masterpieces. Interior designing is visual art because
+                        it's all about dealing with colors and styles. To make
+                        indoor spaces more...
+                     </h6>
+                     <a href="#">Read More</a>
                   </div>
-               </SwiperSlide>
-               <SwiperSlide>
-                  <div className="our-work-card">
-                     <img
-                        className="card-img"
-                        src={require('../img/img5.jpg')}
-                     />
-                     <h4>BUILDING CONSTRUCTION</h4>
-                     <h6>Construction And Civil Work</h6>
+                  <div className="col-lg-4 col-md-6 col-sm-12 service-card">
+                     <img className="" src={require('../img/service5.jpg')} />
+                     <h2>Project Planning</h2>
+                     <h6>
+                        A good project planning is the key for fast development
+                        within the budget. Construction planning improves work
+                        efficiency and effective material management. So do not
+                        compromise to adopt good construction planning...
+                     </h6>
+                     <a href="#">Read More</a>
                   </div>
-               </SwiperSlide>
-               <SwiperSlide>
-                  <div className="our-work-card">
-                     <img
-                        className="card-img"
-                        src={require('../img/img6.jpg')}
-                     />
-                     <h4>LIVING ROOM IDEAS</h4>
-                     <h6>Interior Design</h6>
+                  <div className="col-lg-4 col-md-6 col-sm-12 service-card">
+                     <img className="" src={require('../img/service6.jpg')} />
+                     <h2>Renovation</h2>
+                     <h6>
+                        Thinking for any kind of renovation work! Why don't
+                        choose Arkose Buildcom for that? Bedroom, kitchen,
+                        bathroom renovation and much more. Renovation means to
+                        make improvements on an existing building or home...
+                     </h6>
+                     <a href="#">Read More</a>
                   </div>
-               </SwiperSlide>
-            </Swiper>
+               </div>
+            </div>
+         </div>
+         <div className="constrcution-eng">
+            <div className="constrcution-eng-text">
+               <h6>| Working With Excellence</h6>
+               <h1>Construction & Engineering Real Solutions.</h1>
+               <p>
+                  lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum
+                  dolor sit amet, consectetur adipiscinglorem ipsum dolor sit
+                  amet, consectetur adipiscing
+               </p>
+               <ul>
+                  <li>lorem ipsum dolor sit amet, consectetur adipis</li>
+                  <li>lorem ipsum dolor sit amet, consectetur adipis</li>
+                  <li>lorem ipsum dolor sit amet, consectetur adipis</li>
+                  <li>lorem ipsum dolor sit amet, consectetur adipis</li>
+                  <li>lorem ipsum dolor sit amet, consectetur adipis</li>
+               </ul>
+
+               <button>View More</button>
+            </div>
+            <div className="constrcution-eng-img">
+               <img src={require('../img/construction-engineering.jpg')} />
+            </div>
          </div>
          <div className="facts">
             <div className="facts-container">
@@ -126,7 +154,12 @@ const Home = () => {
          </div>
          <div className="expert-team">
             <div className="team-section">
+               <h6>| Would Like To Hear From You!</h6>
                <h1>Our Expert Team</h1>
+               <span>
+                  lorem ipsum dolor sit amet, consectetur adipis lorem ipsum
+                  dolor sit amet, consectetur adipis
+               </span>
                <div className="team-members">
                   <div className="imgBox">
                      <div className="img-container">
