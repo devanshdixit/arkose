@@ -125,7 +125,103 @@ const Home = () => {
                <h5>Happy Customers</h5>
             </div>
          </div>
-         <div className="expert-team"></div>
+         <div className="expert-team">
+            <div className="team-section">
+               <h1>Our Expert Team</h1>
+               <div className="team-members">
+                  <div className="imgBox">
+                     <div className="img-container">
+                        <img
+                           className="team-member"
+                           src="https://arkose.co.in/assets/img/arkose_buildcom_about_us_interior_designer.jpg"
+                        />
+                     </div>
+                     <h6>Senior Interior Designer</h6>
+                     <h5>MRS. DIVYA SHARMA</h5>
+                     <div className="image-overlay">
+                        <div className="social-icon">
+                           <img
+                              className="social-icon-img"
+                              src={require('../img/whatsapp.png')}
+                           />
+                           <h6 style={{ fontWeight: 'bold' }}>
+                              +91 7007022736
+                           </h6>
+                        </div>
+
+                        <div className="social-icon">
+                           <img
+                              className="social-icon-img"
+                              src={require('../img/email.png')}
+                           />
+                           <h6 style={{ fontWeight: 'bold' }}>
+                              interiordesigner@arkose.co.in
+                           </h6>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div className="imgBox">
+                     <img
+                        className="team-member"
+                        src="https://arkose.co.in/assets/img/arkose_buildcom_about_us_autocad_designer.jpg"
+                     />
+                     <h6>Senior Auto CAD Designer</h6>
+                     <h5>MR. GYANENDRA SHARMA</h5>
+                     <div className="image-overlay">
+                        <div className="social-icon">
+                           <img
+                              className="social-icon-img"
+                              src={require('../img/whatsapp.png')}
+                           />
+                           <h6 style={{ fontWeight: 'bold' }}>
+                              +91 7007022736
+                           </h6>
+                        </div>
+
+                        <div className="social-icon">
+                           <img
+                              className="social-icon-img"
+                              src={require('../img/email.png')}
+                           />
+                           <h6 style={{ fontWeight: 'bold' }}>
+                              caddesigner@arkose.co.in
+                           </h6>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="imgBox">
+                     <img
+                        className="team-member"
+                        src="https://arkose.co.in/assets/img/arkose_buildcom_image_comming_soon.jpg"
+                     />
+                     <h6>Senior Architect</h6>
+                     <h5>MR. J.P. SHARMA</h5>
+                     <div className="image-overlay">
+                        <div className="social-icon">
+                           <img
+                              className="social-icon-img"
+                              src={require('../img/whatsapp.png')}
+                           />
+                           <h6 style={{ fontWeight: 'bold' }}>
+                              +91 7007022736
+                           </h6>
+                        </div>
+
+                        <div className="social-icon">
+                           <img
+                              className="social-icon-img"
+                              src={require('../img/email.png')}
+                           />
+                           <h6 style={{ fontWeight: 'bold' }}>
+                              architect@arkose.co.in
+                           </h6>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
          <Footer />
       </>
    )

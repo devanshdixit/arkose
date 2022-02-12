@@ -205,6 +205,10 @@ p {
    height: 100vh;
 }
 
+.expert-team .team-section h1 {
+   margin-top: 60px;
+}
+
 /* ------------------------------------------------------------ */
 
 .imgBox {
@@ -608,7 +612,7 @@ textarea:hover {
    }
 
    .expert-team {
-      height: 10vh;
+      height: 180vh;
    }
 }
 
