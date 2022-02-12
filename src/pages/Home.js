@@ -103,7 +103,6 @@ const Home = () => {
             </Swiper>
          </div>
          <div className="facts">
-            .main
             <div className="facts-container">
                <FaBusinessTime className="icon" />
                <h1>10+</h1>
