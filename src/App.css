@@ -51,28 +51,20 @@
 
 .main-container {
    width: 50vw;
-   padding-top: 100px;
+   padding-top: 120px;
    padding-left: 30px;
+}
+.main-container h1 {
+   margin-bottom: 30px;
+}
+.main-container p {
+   font-size: 18px;
 }
 
 .main-container h1,
 p {
    color: #fff;
 }
-
-/* About us */
-.about-us {
-   height: 60vh;
-   background: url(./img/about-bg.jpg) center center/cover;
-   position: relative;
-}
-
-.about-us-container {
-   position: absolute;
-   top: 150px;
-   left: 50px;
-}
-
 .main-container {
    animation: transitionIn 1s;
 }
@@ -87,6 +79,57 @@ p {
       opacity: 1;
       transform: translateX(0);
    }
+}
+
+/* slider */
+
+.our-work {
+   padding: 40px;
+   height: 150vh;
+   align-items: center;
+   background: rgb(29, 28, 28, 0.9) url(./img/contact-bg.png) center
+      center/cover;
+   z-index: 0;
+   margin-bottom: -100px;
+}
+
+.our-work h1,
+h5 {
+   color: #fff;
+}
+.our-work-card {
+   height: 360px;
+   width: 300px;
+   background-color: #fff;
+   margin: 20px;
+   text-align: center;
+   border-radius: 5px;
+}
+
+.our-work-card h4 {
+   margin-top: 10px;
+}
+.our-work-card h6 {
+   padding-bottom: 20px;
+}
+.card-img {
+   width: 100%;
+   height: 80%;
+}
+
+/* -------------- */
+
+/* About us */
+.about-us {
+   height: 60vh;
+   background: url(./img/about-bg.jpg) center center/cover;
+   position: relative;
+}
+
+.about-us-container {
+   position: absolute;
+   top: 150px;
+   left: 50px;
 }
 
 .about-us h1 {
@@ -155,6 +198,11 @@ p {
 
 .content {
    transition: all 0.5s ease-in-out;
+}
+
+/* Expert team */
+.expert-team {
+   height: 100vh;
 }
 
 /* ------------------------------------------------------------ */
@@ -295,6 +343,275 @@ textarea:hover {
    height: 100%;
 }
 
+/* facts */
+.facts {
+   background: #ccc;
+   margin: 0px 30px;
+   /* margin-top: -20px; */
+   z-index: 10 !important  ;
+   padding: 90px;
+   background: rgb(59, 59, 59) url(./img/home-bg.png) right no-repeat;
+   background-size: 600px;
+   display: flex;
+   justify-content: space-between;
+}
+.facts-container {
+   align-items: center;
+   text-align: center;
+}
+
+.facts-container h1 {
+   color: #fff;
+   margin-top: 20px;
+
+   font-size: 50px;
+}
+
+.icon {
+   color: #fff;
+   font-size: 100px;
+}
+
+.facts h1 {
+   margin-bottom: 0 !important;
+}
+
+/* footer */
+.footer {
+   display: flex;
+   align-items: flex-end;
+
+   z-index: 0 !important;
+}
+
+.footer-logo {
+   height: 100px;
+}
+
+.footerInfo {
+   background-color: #000000;
+   width: 100%;
+   padding-top: 50px;
+   padding-bottom: 20px;
+}
+
+.footerContainer {
+   margin: 50px 100px;
+}
+
+.footerItem {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 30px;
+}
+
+.mainTitle {
+   position: relative;
+   display: inline-block;
+}
+.mainTitle h4 {
+   color: #fff;
+   font-size: 24px;
+   margin-bottom: 25px;
+}
+.mainTitle span {
+   width: 10%;
+   height: 2px;
+   background-color: #fff;
+   position: absolute;
+   left: 0;
+   bottom: 29px;
+   transition: all 0.5s ease;
+}
+
+.mainTitle:hover span {
+   width: 100%;
+}
+
+.socialLink {
+   width: 35px;
+   height: 35px;
+   margin-right: 20px;
+   margin-top: 10px;
+   background-color: #fff;
+   color: #2c3e50;
+   line-height: 35px;
+   text-align: center;
+   border-radius: 50%;
+   cursor: pointer;
+   display: inline-block;
+}
+
+.facebook {
+   transition: all 0.5s ease;
+}
+.facebook:hover {
+   background-color: #3b5998;
+   color: #fff;
+}
+
+.instagram {
+   transition: all 0.5s ease;
+}
+.instagram:hover {
+   background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+   );
+   color: #fff;
+}
+
+.twitter {
+   transition: all 0.5s ease;
+}
+.twitter:hover {
+   background-color: #55acee;
+   color: #fff;
+}
+
+.socialLink i {
+   animation: socialItemAnimation 2s infinite;
+}
+
+@keyframes socialItemAnimation {
+   0% {
+      transform: scale(1);
+   }
+   25% {
+      transform: scale(1.2);
+   }
+   50% {
+      transform: scale(1);
+   }
+   75% {
+      transform: scale(1.2);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+.socialItem a {
+   display: block;
+   color: #ddd;
+   font-size: 14px;
+   margin-bottom: 10px;
+   text-transform: capitalize;
+   transition: all 0.5s ease;
+   text-decoration: none;
+}
+.socialItem a:hover {
+   margin-left: 10px;
+}
+
+.addressTitle {
+   color: rgb(255, 255, 255);
+   font-weight: 600;
+   font-size: 16px;
+}
+
+.socialInfo p {
+   font-size: 12px;
+}
+
+.callInfo {
+   display: flex;
+   align-items: center;
+   margin-top: 20px;
+}
+.callInfo h6 {
+   color: #ddd;
+   margin-right: 6px;
+   font-size: 14px;
+}
+
+.callInfo i {
+   margin-right: 15px;
+   color: #fff;
+}
+
+.callInfo span {
+   color: #fff;
+   padding: 10px 25px;
+   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+   border-radius: 30px;
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+
+.callInfo span:hover {
+   transform: scale(0.95);
+}
+
+@media screen and (max-width: 1199.99px) {
+   .footerContainer {
+      margin: 50px;
+   }
+   .footerItem {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+@media screen and (max-width: 991.99px) {
+   .footerContainer {
+      margin: 35px;
+   }
+   .footerItem {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .icon {
+      font-size: 60px;
+   }
+}
+
+@media screen and (max-width: 575.99px) {
+   .footerContainer {
+      margin: 15px;
+   }
+   .footerItem {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .main-container {
+      width: 90vw;
+      /* padding-top: 120px;
+      padding-left: 30px; */
+   }
+   .facts {
+      flex-direction: column;
+      margin: 0px 20px;
+   }
+
+   .facts-container {
+      margin-bottom: 30px;
+   }
+   .our-work {
+      padding: 10px;
+      height: 100vh;
+
+      margin-bottom: -100px;
+   }
+
+   .our-work-card {
+      height: 360px;
+      width: 50vw;
+      background-color: #fff;
+      /* margin: 20px; */
+      text-align: center;
+      border-radius: 5px;
+   }
+
+   .expert-team {
+      height: 10vh;
+   }
+}
+
 @media (max-width: 1000px) {
    .nav-link {
       padding: 15px 15px !important;
@@ -335,6 +652,9 @@ textarea:hover {
       width: 100vw;
       height: 80vh;
    }
+   .icon {
+      font-size: 80px;
+   }
 }
 
 @media (max-width: 375px) {
@@ -342,7 +662,6 @@ textarea:hover {
       min-height: 50px;
    }
    .logo {
-      background: var(--primary-color);
       height: 20px;
       padding: 0px 10px;
    }
