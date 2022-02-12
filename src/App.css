@@ -663,7 +663,7 @@ textarea:hover {
       margin-right: 20px;
    }
    .navbar-toggler {
-      background: #707070 !important;
+      background: var(--primary-color) !important;
    }
    .experience-section {
       flex-direction: column;
@@ -720,6 +720,10 @@ textarea:hover {
       grid-template-columns: repeat(1, 1fr);
    }
 
+   .footer {
+      margin-top: 40px;
+   }
+
    .main-section {
       height: 80vh;
    }
@@ -758,6 +762,12 @@ textarea:hover {
 
    .expert-team {
       height: 180vh;
+   }
+   .constrcution-eng {
+      height: 150vh;
+   }
+   .constrcution-eng-img img {
+      width: 100%;
    }
 }
 
