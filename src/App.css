@@ -266,6 +266,7 @@ p {
 .contact-us {
    height: 90vh;
    display: flex;
+   margin: 100px 0;
    justify-content: space-between;
    background: rgba(197, 193, 193, 1) url(./img/contact-bg.png) center
       center/cover;
