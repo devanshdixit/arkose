@@ -124,7 +124,9 @@ const Home = () => {
                   <li>lorem ipsum dolor sit amet, consectetur adipis</li>
                </ul>
 
-               <button>View More</button>
+               <button id="view-more">
+                  <span>View More</span>
+               </button>
             </div>
             <div className="constrcution-eng-img">
                <img src={require('../img/construction-engineering.jpg')} />

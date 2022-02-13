@@ -1,4 +1,5 @@
 import React from 'react'
+import Details from './Details'
 import Footer from './Footer'
 import Header from './Header'
 
@@ -6,12 +7,13 @@ const ContactUs = () => {
    return (
       <>
          <Header />
-         <div className="about-us">
-            <div className="about-us-container">
+         <div className="about-us contact-us-main">
+            <div className="about-us-container ">
                <h1>Contact Us</h1>
                <p>Home / contacts us</p>
             </div>
          </div>
+         <Details />
          <div className="contact-us">
             <div classname="contact-form">
                <div className="form-container">
