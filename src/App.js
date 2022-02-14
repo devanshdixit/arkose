@@ -17,6 +17,7 @@ import AboutUs from './pages/AboutUs'
 import Services from './pages/Services'
 import Projects from './pages/Projects'
 import ContactUs from './pages/ContactUs'
+import ProjectDetails from './pages/ProjectDetails'
 import Home from './pages/Home'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/details" element={<ProjectDetails />} />
          </Routes>
       </div>
    )
