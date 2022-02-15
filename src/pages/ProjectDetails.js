@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Header from './Header'
 import { FaHome } from 'react-icons/fa'
 import { TiTick } from 'react-icons/ti'
@@ -13,7 +14,11 @@ const ProjectDetails = () => {
                <h1>Project Details</h1>
                <p>
                   <FaHome className="home-icon" />
-                  Home / project details
+                  <Link className="home" to="/">
+                     {' '}
+                     Home
+                  </Link>{' '}
+                  / project details
                </p>
             </div>
          </div>

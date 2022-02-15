@@ -8,13 +8,26 @@ const AboutUs = () => {
    return (
       <>
          <Header />
-         <div className="about-us">
-            <div className="about-us-container">
-               <h1>About Us</h1>
-               <p>
-                  <FaHome className="home-icon" />
-                  Home / about us
-               </p>
+         <div className="about-us-wrapper">
+            <div className="about-us">
+               <div className="about-us-container">
+                  <h1>About Us</h1>
+                  <p>
+                     <FaHome className="home-icon" />
+                     <Link className="home" to="/">
+                        {' '}
+                        Home
+                     </Link>{' '}
+                     / about us
+                  </p>
+                  <p className="container">
+                     From more than 10 years, Arkose Buildcom has offered a wide
+                     range of construction services in Kanpur and many other
+                     cities of Uttar Pradesh. We are strived to maintain it. We
+                     aim to eliminate the task of dividing your project between
+                     different architecture and construction company.
+                  </p>
+               </div>
             </div>
          </div>
          <div className="experience-section">
@@ -47,9 +60,9 @@ const AboutUs = () => {
          <div className="team-section container">
             <h5>Our team</h5>
             <h1>Our Motivated Team</h1>
-            <div className="team-members">
-               <div className="imgBox">
-                  <div className="img-container">
+            <div className="team-members container">
+               <div className="imgBox col-lg-3">
+                  <div>
                      <img
                         className="team-member"
                         src="https://arkose.co.in/assets/img/arkose_buildcom_about_us_interior_designer.jpg"
@@ -78,7 +91,7 @@ const AboutUs = () => {
                   </div>
                </div>
 
-               <div className="imgBox">
+               <div className="imgBox col-lg-3">
                   <img
                      className="team-member"
                      src="https://arkose.co.in/assets/img/arkose_buildcom_about_us_autocad_designer.jpg"
@@ -105,7 +118,7 @@ const AboutUs = () => {
                      </div>
                   </div>
                </div>
-               <div className="imgBox">
+               <div className="imgBox col-lg-3">
                   <img
                      className="team-member"
                      src="https://arkose.co.in/assets/img/arkose_buildcom_image_comming_soon.jpg"

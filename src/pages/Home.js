@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
+import Details from './Details'
 import { FaBusinessTime, FaMedal } from 'react-icons/fa'
 import { GiFactory } from 'react-icons/gi'
 import { VscFeedback } from 'react-icons/vsc'
@@ -27,7 +29,8 @@ const Home = () => {
                </p>
             </div>
          </div>
-         <div className="section-offer">
+         <Details />
+         <div className="section-offer container">
             <div className="sub-section-offer">
                <h6>| What We Offer</h6>
                <h1>Arkose Best Services</h1>
@@ -109,7 +112,7 @@ const Home = () => {
             </div>
          </div>
          <div className="constrcution-eng row">
-            <div className="constrcution-eng-text col-xl-6 col-lg-6 col-md-12">
+            <div className="constrcution-eng-text col-xl-6 col-lg-6 col-md-12 container">
                <h6>| Working With Excellence</h6>
                <h1>Construction & Engineering Real Solutions.</h1>
                <p>
@@ -271,6 +274,66 @@ const Home = () => {
                         </div>
                      </div>
                   </div>
+               </div>
+            </div>
+         </div>
+         <div style={{ background: '#ff631b', padding: '40px 0px' }}>
+            <div
+               className="container"
+               style={{ display: 'flex', justifyContent: 'space-between' }}
+            >
+               <div>
+                  <h3>Looking for Professionals to build your dream home?</h3>
+                  <p style={{ marginBottom: '0px' }}>
+                     We offer the best engineers and architects to make your
+                     dreams come true.
+                  </p>
+               </div>
+               <div>
+                  <button
+                     id="talktogether"
+                     style={{
+                        textDecoration: 'none',
+                        color: '#fff',
+                        border: '1px solid #fff',
+                        borderRadius: '30px',
+                        padding: '15px',
+                        textAlign: 'center',
+                        background: '#ff631b'
+                     }}
+                  >
+                     LET'S TALK TOGETHER
+                  </button>
+               </div>
+            </div>
+         </div>
+         <div className="container">
+            <div className="who-we-are row">
+               <div className="col-lg-6 col-md-12">
+                  <img
+                     style={{ width: '100%' }}
+                     src={require('../img/who-we-are.jpg')}
+                     alt=""
+                  />
+               </div>
+               <div
+                  className="who-we-are-text col-lg-6 col-md-12"
+                  style={{ padding: '40px' }}
+               >
+                  <h2>WHO WE ARE</h2>
+                  <p>
+                     Arkose Buildcom Pvt. Ltd. traces its roots back to 2005 in
+                     Kanpur and since then have never looked back. With hundreds
+                     of successful projects under our belt, we can proudly say
+                     that we are one of the most trusted companies in Kanpur.
+                     From more than 10 years, Arkose Buildcom has offered a wide
+                     range of construction and architecture services in Kanpur
+                     and many other cities of Uttar Pradesh. We strive for
+                     perfection. We aim to eliminate the task of dividing your
+                     project between different architectures and construction
+                     companies.
+                  </p>
+                  <button>LEARN OUR SERVICES</button>
                </div>
             </div>
          </div>

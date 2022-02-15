@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
 import { FaHome } from 'react-icons/fa'
@@ -63,11 +64,15 @@ const Projects = () => {
                   <h1>Our Projects</h1>
                   <p>
                      <FaHome className="home-icon" />
-                     Home / projects
+                     <Link className="home" to="/">
+                        {' '}
+                        Home
+                     </Link>{' '}
+                     / projects
                   </p>
                </div>
             </div>
-            <div className="container my-3">
+            <div className="container my-4">
                <div className=" row proj-category">
                   <div className="col-lg-2 col-md-4 col-sm-4 category-tab">
                      <a onClick={allItems}>All</a>
@@ -106,7 +111,7 @@ const Projects = () => {
                            alt=""
                         />
                         <div className="gallery-overlay">
-                           <a href="#">See More</a>
+                           <Link to="/details">See More</Link>
                         </div>
                      </div>
                   )

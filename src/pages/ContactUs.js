@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Details from './Details'
 import Footer from './Footer'
 import Header from './Header'
@@ -13,7 +14,11 @@ const ContactUs = () => {
                <h1>Contact Us</h1>
                <p>
                   <FaHome className="home-icon" />
-                  Home / contact us
+                  <Link className="home" to="/">
+                     {' '}
+                     Home
+                  </Link>{' '}
+                  / contact us
                </p>
             </div>
          </div>
@@ -22,7 +27,7 @@ const ContactUs = () => {
             <div classname="contact-form">
                <div className="form-container">
                   <h5>Get Quote</h5>
-                  <h1>Request A Quote</h1>
+                  <h1 style={{ color: '#002156' }}>Request A Quote</h1>
                   <form>
                      <input type="text" placeholder="Enter name" />
                      <input type="text" placeholder="Enter email" />
