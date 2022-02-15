@@ -4,10 +4,10 @@ import { MdLocationOn, MdMail } from 'react-icons/md'
 
 const Details = () => {
    return (
-      <div className="details">
+      <div className="details container">
          <div className="row details-container">
             <div className="col-lg-4 col-md-6 details-card">
-               <div className="details-card-container">
+               <div className="details-card-container ">
                   <MdLocationOn className="details-icon" />
                   <h1>Our Location</h1>
                   <h6>

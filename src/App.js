@@ -17,6 +17,7 @@ import AboutUs from './pages/AboutUs'
 import Services from './pages/Services'
 import Projects from './pages/Projects'
 import ContactUs from './pages/ContactUs'
+import ProjectDetails from './pages/ProjectDetails'
 import Home from './pages/Home'
 
 function App() {
@@ -26,10 +27,11 @@ function App() {
    <Router  basename='/app'>
          <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/app/about" element={<AboutUs />} />
-            <Route path="/app/services" element={<Services />} />
-            <Route path="/app/projects" element={<Projects />} />
-            <Route path="/app/contact" element={<ContactUs />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/details" element={<ProjectDetails />} />
          </Routes>
          </Router>
       </div>

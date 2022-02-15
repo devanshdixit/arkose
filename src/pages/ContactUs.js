@@ -2,6 +2,7 @@ import React from 'react'
 import Details from './Details'
 import Footer from './Footer'
 import Header from './Header'
+import { FaHome } from 'react-icons/fa'
 
 const ContactUs = () => {
    return (
@@ -10,7 +11,10 @@ const ContactUs = () => {
          <div className="about-us contact-us-main">
             <div className="about-us-container ">
                <h1>Contact Us</h1>
-               <p>Home / contacts us</p>
+               <p>
+                  <FaHome className="home-icon" />
+                  Home / contact us
+               </p>
             </div>
          </div>
          <Details />

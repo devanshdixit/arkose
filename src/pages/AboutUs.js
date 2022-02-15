@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import { Link } from 'react-router-dom'
+import { FaHome } from 'react-icons/fa'
 import Footer from './Footer'
 
 const AboutUs = () => {
@@ -10,14 +11,17 @@ const AboutUs = () => {
          <div className="about-us">
             <div className="about-us-container">
                <h1>About Us</h1>
-               <p>Home / about us</p>
+               <p>
+                  <FaHome className="home-icon" />
+                  Home / about us
+               </p>
             </div>
          </div>
          <div className="experience-section">
-            <div>
+            <div className="col-lg-6 col-md-10 col-sm-12 ">
                <img
-                  style={{ width: '600px' }}
-                  src="https://arkose.co.in/assets/img/arkose_buildcom_about_us_content.jpg"
+                  style={{ width: '100%' }}
+                  src="https://arkose.co.in/assets/img/arkose_buildcom_about_us_content.jpg "
                   alt=""
                />
             </div>
@@ -40,7 +44,7 @@ const AboutUs = () => {
                </h5>
             </div>
          </div>
-         <div className="team-section">
+         <div className="team-section container">
             <h5>Our team</h5>
             <h1>Our Motivated Team</h1>
             <div className="team-members">

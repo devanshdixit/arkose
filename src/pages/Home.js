@@ -4,6 +4,7 @@ import Footer from './Footer'
 import { FaBusinessTime, FaMedal } from 'react-icons/fa'
 import { GiFactory } from 'react-icons/gi'
 import { VscFeedback } from 'react-icons/vsc'
+import { TiTick } from 'react-icons/ti'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/autoplay'
@@ -107,8 +108,8 @@ const Home = () => {
                </div>
             </div>
          </div>
-         <div className="constrcution-eng">
-            <div className="constrcution-eng-text">
+         <div className="constrcution-eng row">
+            <div className="constrcution-eng-text col-xl-6 col-lg-6 col-md-12">
                <h6>| Working With Excellence</h6>
                <h1>Construction & Engineering Real Solutions.</h1>
                <p>
@@ -117,44 +118,61 @@ const Home = () => {
                   amet, consectetur adipiscing
                </p>
                <ul>
-                  <li>lorem ipsum dolor sit amet, consectetur adipis</li>
-                  <li>lorem ipsum dolor sit amet, consectetur adipis</li>
-                  <li>lorem ipsum dolor sit amet, consectetur adipis</li>
-                  <li>lorem ipsum dolor sit amet, consectetur adipis</li>
-                  <li>lorem ipsum dolor sit amet, consectetur adipis</li>
+                  <li>
+                     <TiTick className="tick" /> lorem ipsum dolor sit amet,
+                     consectetur adipis
+                  </li>
+                  <li>
+                     <TiTick className="tick" /> lorem ipsum dolor sit amet,
+                     consectetur adipis
+                  </li>
+                  <li>
+                     <TiTick className="tick" /> lorem ipsum dolor sit amet,
+                     consectetur adipis
+                  </li>
+                  <li>
+                     <TiTick className="tick" /> lorem ipsum dolor sit amet,
+                     consectetur adipis
+                  </li>
+                  <li>
+                     <TiTick className="tick" /> lorem ipsum dolor sit amet,
+                     consectetur adipis
+                  </li>
                </ul>
 
                <button id="view-more">
                   <span>View More</span>
                </button>
             </div>
-            <div className="constrcution-eng-img">
+            <div className="constrcution-eng-img img-fluid col-xl-6 col-lg-6 col-md-12">
                <img src={require('../img/construction-engineering.jpg')} />
             </div>
          </div>
-         <div className="facts">
-            <div className="facts-container">
-               <FaBusinessTime className="icon" />
-               <h1>10+</h1>
-               <h5>Years Experience</h5>
-            </div>
-            <div className="facts-container">
-               <FaMedal className="icon" />
-               <h1>18</h1>
-               <h5>Awards</h5>
-            </div>
-            <div className="facts-container">
-               <GiFactory className="icon" />
-               <h1>693</h1>
-               <h5>Projects Done</h5>
-            </div>
-            <div className="facts-container">
-               <VscFeedback className="icon" />
-               <h1>363</h1>
-               <h5>Happy Customers</h5>
+         <div className="container">
+            <div className="facts row">
+               <div className="facts-container col-lg-3 col-md-6 ">
+                  <FaBusinessTime className="icon" />
+                  <h1>10+</h1>
+                  <h5>Years Experience</h5>
+               </div>
+               <div className="facts-container col-lg-3 col-md-6">
+                  <FaMedal className="icon" />
+                  <h1>18</h1>
+                  <h5>Awards</h5>
+               </div>
+               <div className="facts-container col-lg-3 col-md-6">
+                  <GiFactory className="icon" />
+                  <h1>693</h1>
+                  <h5>Projects Done</h5>
+               </div>
+               <div className="facts-container col-lg-3 col-md-6">
+                  <VscFeedback className="icon" />
+                  <h1>363</h1>
+                  <h5>Happy Customers</h5>
+               </div>
             </div>
          </div>
-         <div className="expert-team">
+         <div className="expert-team ">
             <div className="team-section">
                <h6>| Would Like To Hear From You!</h6>
                <h1>Our Expert Team</h1>
@@ -162,9 +180,9 @@ const Home = () => {
                   lorem ipsum dolor sit amet, consectetur adipis lorem ipsum
                   dolor sit amet, consectetur adipis
                </span>
-               <div className="team-members">
-                  <div className="imgBox">
-                     <div className="img-container">
+               <div className="team-members container">
+                  <div className="imgBox col-lg-3">
+                     <div>
                         <img
                            className="team-member"
                            src="https://arkose.co.in/assets/img/arkose_buildcom_about_us_interior_designer.jpg"
@@ -195,7 +213,7 @@ const Home = () => {
                      </div>
                   </div>
 
-                  <div className="imgBox">
+                  <div className="imgBox col-lg-3">
                      <img
                         className="team-member"
                         src="https://arkose.co.in/assets/img/arkose_buildcom_about_us_autocad_designer.jpg"
@@ -224,7 +242,7 @@ const Home = () => {
                         </div>
                      </div>
                   </div>
-                  <div className="imgBox">
+                  <div className="imgBox col-lg-3">
                      <img
                         className="team-member"
                         src="https://arkose.co.in/assets/img/arkose_buildcom_image_comming_soon.jpg"
