@@ -23,7 +23,7 @@ const Projects = () => {
 
    const onlyArchitect = (categoryItem) => {
       const finalData = AllData.filter((value) => {
-         return value.category == categoryItem
+         return value.category === categoryItem
       })
       setImages(finalData)
    }

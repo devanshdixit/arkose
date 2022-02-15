@@ -23,6 +23,8 @@ import Home from './pages/Home'
 function App() {
    return (
       <div className="App">
+         
+   <Router  basename='/app'>
          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
@@ -31,6 +33,7 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/details" element={<ProjectDetails />} />
          </Routes>
+         </Router>
       </div>
    )
 }
