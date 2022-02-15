@@ -738,7 +738,8 @@ textarea:hover {
 }
 
 #check1:checked ~ .gallery .gallery-img-wrapper {
-   opacity: 1;
+
+   display: block;
    transform: scale(1);
    position: relative;
    transition: 0.5s;
@@ -746,7 +747,8 @@ textarea:hover {
 
 #check2:checked ~ .gallery .architecture {
    transform: scale(1);
-   opacity: 1;
+
+   display: block;
    position: relative;
    transition: 0.5s;
 }
@@ -755,7 +757,7 @@ textarea:hover {
 #check2:checked ~ .gallery .interior,
 #check2:checked ~ .gallery .planning,
 #check2:checked ~ .gallery .renovation {
-   opacity: 0;
+  display: none;
    transform: scale(0);
    position: absolute;
    transition: 0s;
@@ -779,7 +781,7 @@ textarea:hover {
 
 #check4:checked ~ .gallery .civil {
    transform: scale(1);
-   opacity: 1;
+  display: block;
    position: relative;
    transition: 0.5s;
 }
@@ -788,14 +790,14 @@ textarea:hover {
 #check4:checked ~ .gallery .architecture,
 #check4:checked ~ .gallery .planning,
 #check4:checked ~ .gallery .renovation {
-   opacity: 0;
+display: block;
    transform: scale(0);
    position: absolute;
 }
 
 #check5:checked ~ .gallery .planning {
    transform: scale(1);
-   opacity: 1;
+   display: block;
    position: relative;
    transition: 0.5s;
 }
@@ -804,7 +806,7 @@ textarea:hover {
 #check5:checked ~ .gallery .architecture,
 #check5:checked ~ .gallery .civil,
 #check5:checked ~ .gallery .renovation {
-   opacity: 0;
+   display: none;
    transform: scale(0);
    position: absolute;
    transition: 0.5s;
