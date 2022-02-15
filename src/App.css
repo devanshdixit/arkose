@@ -722,6 +722,17 @@ textarea:hover {
 }
 
 /* projects */
+
+/* .proj-category {
+   display: flex !important;
+   justify-content: center;
+} */
+
+.category-tab a:hover {
+   color: var(--primary-color) !important;
+   cursor: pointer;
+}
+
 .projects input {
    display: none;
 }
@@ -775,7 +786,7 @@ textarea:hover {
    color: var(--primary-color);
 }
 
-.container label {
+.proj-category a {
    padding: 10px 20px;
 
    font-size: 18px;
