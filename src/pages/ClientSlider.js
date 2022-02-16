@@ -101,14 +101,14 @@ const ClientSlider = () => {
                                        width: '90px',
                                        marginRight: '10px'
                                     }}
-                                    src={require('../img/client1.jpg')}
+                                    src={require('../img/client2.jpg')}
                                  />
                                  <div>
                                     <h5 style={{ marginBottom: '0px' }}>
-                                       Pankaj Rathor
+                                       SANJEEV AGNIHOTRI
                                     </h5>
                                     <p className="client-location">
-                                       Govind Nagar
+                                       Kidwai Nagar
                                     </p>
                                  </div>
                               </div>
@@ -123,11 +123,11 @@ const ClientSlider = () => {
                            <div style={{ display: 'flex', marginTop: '20px' }}>
                               <FaQuoteRight id="quote" />
                               <p className="client-text">
-                                 I am writing to tell you how pleased we are
-                                 with your work. The construction for a 3 BHK in
-                                 this cost effective budget is really a big job
-                                 and you have done it very well. We are very
-                                 happy with the work of Arkose Buildcom.
+                                 You have done a wonderful job with perfection
+                                 for which Arkose Buildcom is wellknown. The
+                                 design of house with a rooftop garden in that
+                                 locality is unique. Thanks a lot Arkose
+                                 Buildcom for designing my dream house.
                               </p>
                            </div>
                         </div>
@@ -153,14 +153,14 @@ const ClientSlider = () => {
                                        width: '90px',
                                        marginRight: '10px'
                                     }}
-                                    src={require('../img/client1.jpg')}
+                                    src={require('../img/client3.jpg')}
                                  />
                                  <div>
                                     <h5 style={{ marginBottom: '0px' }}>
-                                       Pankaj Rathor
+                                       PAYAL CHANDEL
                                     </h5>
                                     <p className="client-location">
-                                       Govind Nagar
+                                       Sarvodaya Nagar
                                     </p>
                                  </div>
                               </div>
@@ -175,68 +175,17 @@ const ClientSlider = () => {
                            <div style={{ display: 'flex', marginTop: '20px' }}>
                               <FaQuoteRight id="quote" />
                               <p className="client-text">
-                                 I am writing to tell you how pleased we are
-                                 with your work. The construction for a 3 BHK in
-                                 this cost effective budget is really a big job
-                                 and you have done it very well. We are very
-                                 happy with the work of Arkose Buildcom.
+                                 I don't know what else to say except thanks a
+                                 lot Arkose Buildcom for great work with full of
+                                 professionalism before deadline.The interior is
+                                 so pleasant and the architecture of the
+                                 building is unrepeatable.
                               </p>
                            </div>
                         </div>
                      </div>
                   </SwiperSlide>
-                  <SwiperSlide className="slider ">
-                     <div className="client-card">
-                        <div
-                           className="client-card-wrapper"
-                           style={{ padding: '40px' }}
-                        >
-                           <div
-                              style={{
-                                 display: 'flex',
-                                 justifyContent: 'space-between',
-                                 width: '100%'
-                              }}
-                           >
-                              <div style={{ display: 'flex' }}>
-                                 <img
-                                    style={{
-                                       height: '90px',
-                                       width: '90px',
-                                       marginRight: '10px'
-                                    }}
-                                    src={require('../img/client1.jpg')}
-                                 />
-                                 <div>
-                                    <h5 style={{ marginBottom: '0px' }}>
-                                       Pankaj Rathor
-                                    </h5>
-                                    <p className="client-location">
-                                       Govind Nagar
-                                    </p>
-                                 </div>
-                              </div>
-                              <div>
-                                 <FaStar className="stars" />
-                                 <FaStar className="stars" />
-                                 <FaStar className="stars" />
-                                 <FaStar className="stars" />
-                                 <FaStar className="stars" />
-                              </div>
-                           </div>
-                           <div style={{ display: 'flex', marginTop: '20px' }}>
-                              <FaQuoteRight id="quote" />
-                              <p className="client-text">
-                                 I am writing to tell you how pleased we are
-                                 with your work. The construction for a 3 BHK in
-                                 this cost effective budget is really a big job
-                                 and you have done it very well. We are very
-                                 happy with the work of Arkose Buildcom.
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                  </SwiperSlide>
+                  <SwiperSlide></SwiperSlide>
                </Swiper>
             </div>
          </div>
