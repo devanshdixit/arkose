@@ -70,6 +70,20 @@
    margin-top: -4px;
 }
 
+.service-card #view-more:hover {
+   background-color: var(--secondary-color);
+}
+
+#view-more {
+   border: none;
+   width: 200px;
+   color: #fff;
+   padding: 12px 30px;
+   margin-bottom: 80px;
+   background: var(--primary-color);
+   margin-top: 20px;
+}
+
 #view-more span {
    cursor: pointer;
    display: inline-block;
@@ -541,8 +555,9 @@ textarea:hover {
    /* height: 120vh; */
    z-index: 0;
    margin-bottom: -80px;
-   padding: 60px;
+   /* padding: 60px; */
    display: flex;
+   justify-content: center;
 }
 
 .constrcution-eng-text {
@@ -578,7 +593,7 @@ textarea:hover {
 .constrcution-eng-img img {
    width: 100%;
    height: 75%;
-   padding: 20px;
+   /* padding: 20px; */
 }
 
 /* facts */
@@ -614,6 +629,26 @@ textarea:hover {
 
 .facts h1 {
    margin-bottom: 0 !important;
+}
+
+/* why choose us */
+.why-choose-us h1 {
+   color: var(--secondary-color);
+}
+
+.card-choose-us {
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.choose-us-content {
+   padding: 20px;
+}
+.choose-us-content h5 {
+   color: var(--secondary-color);
+   text-align: center;
+}
+
+.choose-us-content p {
+   color: #565969 !important;
 }
 
 /* footer */
@@ -1226,9 +1261,9 @@ textarea:hover {
       margin: 10px;
       width: 80vw;
    }
-   .footerInfo {
+   /* .footerInfo {
       margin-top: 100px;
-   }
+   } */
 
    .about-us-wrapper .about-us .about-us-container {
       top: 50px;

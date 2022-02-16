@@ -11,6 +11,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/autoplay'
 import ClientSlider from './ClientSlider'
+import CompaniesSlider from './CompaniesSlider'
 
 const Home = () => {
    return (
@@ -112,10 +113,17 @@ const Home = () => {
                </div>
             </div>
          </div>
-         <div className="constrcution-eng row">
-            <div className="constrcution-eng-text col-xl-6 col-lg-6 col-md-12 container">
+
+         <div
+            className="constrcution-eng row"
+            style={{ margin: '-80px 0px', padding: '60px 0px' }}
+         >
+            <div
+               className="constrcution-eng-text col-xl-6 col-lg-6 col-md-12 "
+               style={{ padding: '0px 60px' }}
+            >
                <h6>| Working With Excellence</h6>
-               <h1>Construction & Engineering Real Solutions.</h1>
+               <h1>Construction & Engineering Real Solutions</h1>
                <p>
                   lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum
                   dolor sit amet, consectetur adipiscinglorem ipsum dolor sit
@@ -148,10 +156,19 @@ const Home = () => {
                   <span>View More</span>
                </button>
             </div>
-            <div className="constrcution-eng-img img-fluid col-xl-6 col-lg-6 col-md-12">
-               <img src={require('../img/construction-engineering.jpg')} />
+            <div className="col-lg-6" style={{ padding: '0px' }}>
+               <img
+                  style={{
+                     width: '100%',
+                     height: '90%',
+                     padding: '20px 30px 60px 30px ',
+                     paddingBottom: '80px'
+                  }}
+                  src={require('../img/construction-engineering.jpg')}
+               />
             </div>
          </div>
+
          <div className="container">
             <div className="facts row">
                <div className="facts-container col-lg-3 col-md-6 ">
@@ -278,7 +295,12 @@ const Home = () => {
                </div>
             </div>
          </div>
-         <div style={{ background: '#ff631b', padding: '40px 0px' }}>
+         <div
+            style={{
+               background: '#ff631b',
+               padding: '40px'
+            }}
+         >
             <div
                className="container"
                style={{ display: 'flex', justifyContent: 'space-between' }}
@@ -302,9 +324,9 @@ const Home = () => {
                </div>
             </div>
          </div>
-         <ClientSlider />
+
          <div className="container">
-            <div className="who-we-are row">
+            <div className="who-we-are row" style={{ margin: '60px 0px' }}>
                <div className="col-lg-6 col-md-12">
                   <img
                      style={{ width: '100%' }}
@@ -316,7 +338,7 @@ const Home = () => {
                   className="who-we-are-text col-lg-6 col-md-12"
                   style={{ padding: '40px' }}
                >
-                  <h2>WHO WE ARE</h2>
+                  <h2 style={{ color: '#002156' }}>WHO WE ARE</h2>
                   <p>
                      Arkose Buildcom Pvt. Ltd. traces its roots back to 2005 in
                      Kanpur and since then have never looked back. With hundreds
@@ -340,10 +362,110 @@ const Home = () => {
                </div>
             </div>
          </div>
-         <div className="clients">
-            <div className="client-card"></div>
-            <div className="client-card"></div>
+         <div className="container">
+            <div
+               className="why-choose-us row"
+               style={{
+                  // textAlign: 'center',
+                  // alignItems: 'center',
+                  marginBottom: '40px'
+               }}
+            >
+               <h1 style={{ marginBottom: '40px', textAlign: 'center' }}>
+                  WHY CHOOSE US?
+               </h1>
+               <div
+                  className="col-lg-3 col-md-6 col-sm-12"
+                  style={{ marginBottom: '20px' }}
+               >
+                  <div className="card-choose-us" style={{ width: '100%' }}>
+                     <img
+                        style={{ width: '100%' }}
+                        src={require('../img/chooseus1.jpg')}
+                        alt=""
+                     />
+                     <div className="choose-us-content">
+                        <h5>PROFESSIONALS</h5>
+                        <p>
+                           Arkose Buildcom as a company having engineers and
+                           architects with high level of training and
+                           qualification who are the expert in their jobs. From
+                           the beginning to accomplishment of project everything
+                           is observed by our professionals.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  className="col-lg-3 col-md-6 col-sm-12"
+                  style={{ marginBottom: '20px' }}
+               >
+                  <div className="card-choose-us" style={{ width: '100%' }}>
+                     <img
+                        style={{ width: '100%' }}
+                        src={require('../img/chooseus2.jpg')}
+                        alt=""
+                     />
+                     <div className="choose-us-content">
+                        <h5>PASSIONATE</h5>
+                        <p>
+                           Arkose Buildcom is in the market with a mission,
+                           along with tons of conviction and dedication to build
+                           a perfect, creative and memorable residential or
+                           commercial architecture for you. We have passionate
+                           engineers.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  className="col-lg-3 col-md-6 col-sm-12"
+                  style={{ marginBottom: '20px' }}
+               >
+                  <div className="card-choose-us" style={{ width: '100%' }}>
+                     <img
+                        style={{ width: '100%' }}
+                        src={require('../img/chooseus3.jpg')}
+                        alt=""
+                     />
+                     <div className="choose-us-content">
+                        <h5>CUSTOMER ORIENTED</h5>
+                        <p>
+                           Arkose Buildcom places customer satisfaction at the
+                           core of each of its business decisions. We live to
+                           discover their needs & build the relationship. Once
+                           we committed to a project, nothing can stand in the
+                           way.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  className="col-lg-3 col-md-6 col-sm-12"
+                  style={{ marginBottom: '20px' }}
+               >
+                  <div className="card-choose-us" style={{ width: '100%' }}>
+                     <img
+                        style={{ width: '100%' }}
+                        src={require('../img/chooseus4.jpg')}
+                        alt=""
+                     />
+                     <div className="choose-us-content">
+                        <h5>RELIABLE</h5>
+                        <p>
+                           Arkose Buildcom has been building trust among clients
+                           by delivering them robust and sustainable
+                           architectures on time and within budget for over 10
+                           years. We respect the deadlines and make every effort
+                           to complete on time.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
+         <ClientSlider />
+         <CompaniesSlider />
          <Footer />
       </>
    )
