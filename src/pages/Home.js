@@ -10,6 +10,7 @@ import { TiTick } from 'react-icons/ti'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/autoplay'
+import ClientSlider from './ClientSlider'
 
 const Home = () => {
    return (
@@ -290,23 +291,18 @@ const Home = () => {
                   </p>
                </div>
                <div>
-                  <button
-                     id="talktogether"
-                     style={{
-                        textDecoration: 'none',
-                        color: '#fff',
-                        border: '1px solid #fff',
-                        borderRadius: '30px',
-                        padding: '15px',
-                        textAlign: 'center',
-                        background: '#ff631b'
-                     }}
-                  >
-                     LET'S TALK TOGETHER
+                  <button id="talktogether">
+                     <Link
+                        style={{ textDecoration: 'none', color: '#fff' }}
+                        to="/contact"
+                     >
+                        LET'S TALK TOGETHER
+                     </Link>
                   </button>
                </div>
             </div>
          </div>
+         <ClientSlider />
          <div className="container">
             <div className="who-we-are row">
                <div className="col-lg-6 col-md-12">
@@ -333,9 +329,20 @@ const Home = () => {
                      project between different architectures and construction
                      companies.
                   </p>
-                  <button>LEARN OUR SERVICES</button>
+                  <button id="learn-services">
+                     <Link
+                        style={{ textDecoration: 'none', color: '#fff' }}
+                        to="/services"
+                     >
+                        LEARN OUR SERVICES
+                     </Link>
+                  </button>
                </div>
             </div>
+         </div>
+         <div className="clients">
+            <div className="client-card"></div>
+            <div className="client-card"></div>
          </div>
          <Footer />
       </>

@@ -18,6 +18,28 @@
    color: var(--primary-color);
 }
 
+#talktogether {
+   text-decoration: none;
+   color: #fff;
+   border: 1px solid #fff;
+   border-radius: 30px;
+   padding: 15px;
+   text-align: center;
+   background: #ff631b;
+}
+
+#learn-services {
+   border: none;
+   padding: 15px 20px;
+   border-radius: 30px;
+   background: #ff631b;
+   color: #fff;
+}
+
+#learn-services:hover {
+   background: #f54e00;
+}
+
 .who-we-are-text {
    text-align: center;
 }
@@ -29,6 +51,11 @@
 
 #talktogether:hover {
    background-color: #fc5609;
+}
+
+.stars {
+   color: var(--primary-color);
+   margin-right: 4px;
 }
 
 .home {
@@ -1003,6 +1030,32 @@ textarea:hover {
 .services {
    margin-bottom: 0;
 }
+
+/* client */
+.client-container {
+   background: rgba(0, 33, 86) url(./img/client-bg.jpg) center center/cover;
+}
+
+.client-card {
+   background: #fff;
+}
+
+.client-text {
+   color: #565969 !important;
+}
+
+.client-location {
+   color: var(--primary-color) !important;
+}
+#quote {
+   color: var(--primary-color);
+   font-size: 30px !important;
+}
+
+.slider {
+   width: 48% !important;
+}
+
 @media screen and (max-width: 1199.99px) {
    .footerContainer {
       margin: 50px;
@@ -1086,6 +1139,9 @@ textarea:hover {
    .icon {
       font-size: 60px;
    }
+   .slider {
+      width: 100% !important;
+   }
 }
 
 @media screen and (max-width: 575.99px) {
@@ -1133,6 +1189,9 @@ textarea:hover {
       text-align: center;
       border-radius: 5px;
    }
+   .slider {
+      width: 100% !important;
+   }
 
    /* .expert-team {
       height: 180vh;
@@ -1148,6 +1207,9 @@ textarea:hover {
 
    .footer {
       text-align: center;
+   }
+   .slider {
+      width: 100% !important;
    }
 }
 
@@ -1170,5 +1232,8 @@ textarea:hover {
 
    .about-us-wrapper .about-us .about-us-container {
       top: 50px;
+   }
+   .slider {
+      width: 100% !important;
    }
 }
