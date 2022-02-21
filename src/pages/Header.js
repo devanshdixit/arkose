@@ -44,6 +44,11 @@ const Header = () => {
                         Contact Us
                      </Link>
                   </Nav.Link>
+                  <Nav.Link>
+                     <Link className="nav-link" to="/form">
+                        Form
+                     </Link>
+                  </Nav.Link>
                </Nav>
             </Navbar.Collapse>
          </Navbar>

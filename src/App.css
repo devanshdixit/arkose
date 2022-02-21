@@ -40,6 +40,37 @@
    background: #f54e00;
 }
 
+/* form */
+#submit-form {
+   border: none;
+   padding: 8px 30px;
+   margin-top: 30px;
+   line-height: 2;
+   border-radius: 4px;
+   color: #fff;
+   background: var(--primary-color);
+   font-weight: 500;
+}
+
+.view {
+   position: absolute;
+   top: 75%;
+   left: 45%;
+   color: rgb(255, 255, 255);
+   font-weight: 500;
+   background-color: var(--primary-color);
+   border: none;
+   padding: 5px 10px;
+}
+
+.view:hover {
+   cursor: pointer;
+   background-color: var(--secondary-color);
+}
+#submit-form:hover {
+   background: var(--secondary-color);
+}
+
 .who-we-are-text {
    text-align: center;
 }
@@ -498,7 +529,7 @@ textarea:hover {
 }
 
 #submit:hover {
-   background: black;
+   background: var(--secondary-color);
 }
 
 .map iframe {

@@ -13,9 +13,11 @@
     "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
+    "react-modal": "^3.14.4",
     "react-router": "^6.2.1",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-select": "^5.2.2",
     "swiper": "^8.0.5",
     "tiny-slider": "^2.9.4",
     "web-vitals": "^2.1.4"
