@@ -14,6 +14,11 @@
    color: var(--primary-color);
 }
 
+.form-input {
+   width: 500px;
+   margin: 25px;
+}
+
 #check1 {
    color: var(--primary-color);
 }
@@ -937,96 +942,6 @@ textarea:hover {
    background: var(--primary-color);
 }
 
-#check1:checked ~ .gallery .gallery-img-wrapper {
-   display: block;
-   transform: scale(1);
-   position: relative;
-   transition: 0.5s;
-}
-
-#check2:checked ~ .gallery .architecture {
-   transform: scale(1);
-
-   display: block;
-   position: relative;
-   transition: 0.5s;
-}
-
-#check2:checked ~ .gallery .civil,
-#check2:checked ~ .gallery .interior,
-#check2:checked ~ .gallery .planning,
-#check2:checked ~ .gallery .renovation {
-   display: none;
-   transform: scale(0);
-   position: absolute;
-   transition: 0s;
-}
-
-#check3:checked ~ .gallery .interior {
-   transform: scale(1);
-   opacity: 1;
-   position: relative;
-   transition: 0.5s;
-}
-
-#check3:checked ~ .gallery .civil,
-#check3:checked ~ .gallery .architecture,
-#check3:checked ~ .gallery .planning,
-#check3:checked ~ .gallery .renovation {
-   opacity: 0;
-   transform: scale(0);
-   position: absolute;
-}
-
-#check4:checked ~ .gallery .civil {
-   transform: scale(1);
-   display: block;
-   position: relative;
-   transition: 0.5s;
-}
-
-#check4:checked ~ .gallery .interior,
-#check4:checked ~ .gallery .architecture,
-#check4:checked ~ .gallery .planning,
-#check4:checked ~ .gallery .renovation {
-   display: block;
-   transform: scale(0);
-   position: absolute;
-}
-
-#check5:checked ~ .gallery .planning {
-   transform: scale(1);
-   display: block;
-   position: relative;
-   transition: 0.5s;
-}
-
-#check5:checked ~ .gallery .interior,
-#check5:checked ~ .gallery .architecture,
-#check5:checked ~ .gallery .civil,
-#check5:checked ~ .gallery .renovation {
-   display: none;
-   transform: scale(0);
-   position: absolute;
-   transition: 0.5s;
-}
-
-#check6:checked ~ .gallery .renovation {
-   transform: scale(1);
-   opacity: 1;
-   position: relative;
-   transition: 0.5s;
-}
-
-#check6:checked ~ .gallery .interior,
-#check6:checked ~ .gallery .architecture,
-#check6:checked ~ .gallery .civil,
-#check6:checked ~ .gallery .planning {
-   opacity: 0;
-   transform: scale(0);
-   position: absolute;
-}
-
 .project-details {
    margin-bottom: 80px;
 }
@@ -1120,6 +1035,11 @@ textarea:hover {
 
 .slider {
    width: 48% !important;
+}
+
+/* form-card */
+.form-card {
+   background: url(./img/client-bg.jpg) center center/cover;
 }
 
 @media screen and (max-width: 1199.99px) {
@@ -1270,9 +1190,13 @@ textarea:hover {
    .constrcution-eng-img img {
       width: 100%;
    }
+   .form-input {
+      width: 300px;
+   }
 
    .footer {
       text-align: center;
+      margin-top: 0;
    }
    .slider {
       width: 100% !important;

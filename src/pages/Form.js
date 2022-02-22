@@ -76,17 +76,14 @@ const Form = () => {
                >
                   <div
                      style={{
-                        padding: '50px',
-                        margin: '50px',
-                        boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px'
+                        margin: '100px 50px'
+                        // boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px'
                      }}
                   >
-                     <div
-                        style={{
-                           width: '300px',
-                           margin: '10px'
-                        }}
-                     >
+                     <div className="form-input">
+                        <span style={{ color: '#ff631b', fontSize: '18px' }}>
+                           Select Squarefeet
+                        </span>
                         <CreatableSelect
                            isClearable
                            options={sqftOptions}
@@ -96,12 +93,10 @@ const Form = () => {
                         />
                      </div>
 
-                     <div
-                        style={{
-                           margin: '10px',
-                           width: '300px'
-                        }}
-                     >
+                     <div className="form-input">
+                        <span style={{ color: '#ff631b', fontSize: '18px' }}>
+                           Select Stories
+                        </span>
                         <Select
                            isClearable
                            options={storiesOption}
@@ -110,12 +105,10 @@ const Form = () => {
                            onChange={handleStories}
                         />
                      </div>
-                     <div
-                        style={{
-                           width: '300px',
-                           margin: '10px'
-                        }}
-                     >
+                     <div className="form-input">
+                        <span style={{ color: '#ff631b', fontSize: '18px' }}>
+                           Select Facing
+                        </span>
                         <Select
                            isClearable
                            options={facingOption}
@@ -124,12 +117,10 @@ const Form = () => {
                            onChange={handleFacing}
                         />
                      </div>
-                     <div
-                        style={{
-                           width: '300px',
-                           margin: '10px'
-                        }}
-                     >
+                     <div className="form-input">
+                        <span style={{ color: '#ff631b', fontSize: '18px' }}>
+                           Select Type
+                        </span>
                         <Select
                            isClearable
                            options={typeOption}

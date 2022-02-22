@@ -14,7 +14,6 @@ import Pay from './pages/Pay'
 function App() {
    return (
       <div className="App">
-<<<<<<< HEAD
          <Router basename="/app">
             <Routes>
                <Route path="/" element={<Home />} />
@@ -26,18 +25,6 @@ function App() {
                <Route path="/form" element={<Form />} />
                <Route path="/pay" element={<Pay />} />
             </Routes>
-=======
-         
-   <Router>
-         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<AboutUs />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<ContactUs />} />
-            <Route path="/details" element={<ProjectDetails />} />
-         </Routes>
->>>>>>> 739d04ffeddec0dda839d306c66c7ee41ae3b7f1
          </Router>
       </div>
    )
