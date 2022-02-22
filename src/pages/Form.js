@@ -45,6 +45,15 @@ const Form = () => {
       { value: 'Without Furniture', label: 'Without Furniture' }
    ]
 
+   const customStyles = {
+      option: (provided, state) => ({
+         ...provided,
+         borderBottom: '1px dotted pink',
+         color: state.isSelected ? '#ff631b' : '#002156',
+         padding: 20
+      })
+   }
+
    const handleSqft = (options) => {
       setSqft(options)
    }
@@ -90,6 +99,7 @@ const Form = () => {
                            placeholder={'Sqft'}
                            value={sqft}
                            onChange={handleSqft}
+                           styles={customStyles}
                         />
                      </div>
 
@@ -103,6 +113,7 @@ const Form = () => {
                            placeholder={'Stories'}
                            value={stories}
                            onChange={handleStories}
+                           styles={customStyles}
                         />
                      </div>
                      <div className="form-input">
@@ -115,6 +126,7 @@ const Form = () => {
                            placeholder={'Facing'}
                            value={facing}
                            onChange={handleFacing}
+                           styles={customStyles}
                         />
                      </div>
                      <div className="form-input">
@@ -127,6 +139,7 @@ const Form = () => {
                            placeholder={'Type'}
                            value={type}
                            onChange={handleType}
+                           styles={customStyles}
                         />
                      </div>
                      <div style={{ textAlign: 'center' }}>
