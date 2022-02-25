@@ -10,6 +10,8 @@ import ProjectDetails from './pages/ProjectDetails'
 import Home from './pages/Home'
 import Form from './pages/Form'
 import Pay from './pages/Pay'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
 
 function App() {
    return (
@@ -24,6 +26,8 @@ function App() {
                <Route path="/details" element={<ProjectDetails />} />
                <Route path="/form" element={<Form />} />
                <Route path="/pay" element={<Pay />} />
+               <Route path="/login" element={<Login />} />
+               <Route path="/signup" element={<Signup />} />
             </Routes>
          </Router>
       </div>
